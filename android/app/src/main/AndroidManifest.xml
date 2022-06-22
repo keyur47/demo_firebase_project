@@ -2,7 +2,7 @@
     package="com.example.demo_firebase_project">
     <uses-permission android:name="android.permission.INTERNET"/> <!-- Add this -->
    <application
-        android:label="demo_firebase_project"
+        android:label="QR Code"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
