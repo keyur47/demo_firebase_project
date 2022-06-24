@@ -40,13 +40,13 @@ class AddQrDataScreen extends StatelessWidget {
                         right: 0,
                       ),
                       child: RawScrollbar(
-                        controller: controller.controllerTwo,
+                        controller: controller.scrollController,
                         interactive: false,
                         thickness: 10,
                         thumbColor: Colors.transparent,
                         radius: const Radius.circular(12),
                         child: ListView.builder(
-                            controller: controller.controllerTwo,
+                            controller: controller.scrollController,
                             padding: EdgeInsets.zero,
                             itemCount: controller.dataList.length,
                             itemBuilder: (context, index) {

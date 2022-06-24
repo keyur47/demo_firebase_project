@@ -1,16 +1,14 @@
 import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:demo_firebase_project/model/QR_Data_model.dart';
 import 'package:demo_firebase_project/model/user_data_model.dart';
 import 'package:demo_firebase_project/modules/firestorerepository/firebase_repository.dart';
-import 'package:demo_firebase_project/modules/firestorerepository/firebase_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:get/get.dart';
 
 class Controller extends GetxController {
-   ScrollController controllerTwo = ScrollController();
+  ScrollController scrollController = ScrollController();
   TextEditingController titleController = TextEditingController();
   TextEditingController linkController = TextEditingController();
   Firestore firestoreRepository = Firestore();
